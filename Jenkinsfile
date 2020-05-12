@@ -12,7 +12,7 @@ pipeline {
          }
          stage('Lint HTML') {
               steps {
-                  sh 'tidy -q -e *.html'
+                  sh 'tidy -q -e --drop-empty-elements no *.html'
               }
          }
          stage('Security Scan') {
@@ -24,7 +24,7 @@ pipeline {
               steps {
                   withAWS(region:'us-west-2',credentials:'aws-static') {
                   sh 'echo "Uploading content with AWS creds"'
-                      s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, file:'index.html', bucket:'anvillasoto-jenkins')
+                      s3Upload(pathStyleAccessEnabled: true, payloadSigningEnabled: true, bucket:'anvillasoto-jenkins', includePathPattern:'**/*', excludePathPattern:'**/Jenkinsfile')
                   }
               }
          }
