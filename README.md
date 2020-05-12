@@ -1,22 +1,16 @@
-## ND9991 - C3 - Build CI/CD Pipelines, Monitoring, and Logging
-This repository provides the supporting material for the "ND9991 Cloud DevOps Nanodegree - C3 - Build CI/CD Pipelines, Monitoring, and Logging" course. This repo has two more branches, other than the master branch. 
+## Personal Portfolio & CV Page
 
-* Blue/Green branch corresponds to the Blue/Green deployment strategy. Make sure that you checkout branches "blue" and "green" to see how blue/green deployment was performed in the course.
-* You can create any more branches for a multiple pipeline set-up, as directed in the demonstration video. 
+This project introduces the creation of a personal profile website using a single-page HTML.
+You may access the page [here](http://anvillasoto-jenkins.s3-website-us-west-2.amazonaws.com/).
 
-### Dependencies
-##### 1. AWS account
-You would require to have an AWS account to be able to build cloud infrastructure. Particularly, you will need to create S3 buckets, EC2 instances, and IAM users.
+### Features
 
-#### 2. Jenkins on Ubuntu VM
-As a part of the project, you will need to install Jenkins and a few plugins to assist your requirements, as mentioned in the "Jenkins Pipelines on AWS --> Project Details" page in the classroom. 
+1. This is deployed on S3 with static web hosting enabled.
+2. DevOps enabled powered by Jenkins, meaning that changes from multiple branches are automatically linted and uploaded via S3.
 
-## Prerequisite
-1. A little knowledge of basic commands in Unix terminal.
-1. Understanding of software testing frameworks - JMeter and JUnit
-1. Understanding of deployment strategies 
+### Credits
 
-
+Special thanks to [uideck.com](https://uideck.com/products/unfold-free-personal-portfolio-and-profile-template) to where assets and main layout of this page came from. For personal use only. See __license.txt__ for details.
 
 
 
